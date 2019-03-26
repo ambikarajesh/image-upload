@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title><%=title %></title>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <% if(products.length>0) {%>
+            <ul>
+                <% products.map(product =>{ %>
+                    <li>
+                        <h4><%= product.title %></h4>
+                        <img src='/<%= product.image %>' />
+                    </li>
+                <%})%>
+            </ul>
+        <%}else{%>
+        <%}%>
+        
+    </body>
+</htm>
